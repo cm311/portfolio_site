@@ -1,0 +1,85 @@
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+  color: aliceblue;
+  font-family: PlayfairDisplay;
+  background-color: rgb(50, 50, 150);
+}
+
+a {
+  transition: .4s;
+  color:rgb(230, 230, 0)
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#title-and-resume {
+  border-bottom: solid 2px;
+}
+
+.card-text{
+  color: black;
+}
+
+.list-group-item {
+  background-color: rgb(50, 50, 150);
+}
+
+
+/* Define a slide-in animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  /* Define a fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the slide-in animation to the target element */
+  .target-slide-element-1 {
+    animation: slideInFromLeft 1s ease-out forwards;
+    animation-delay: 0s;
+  }
+
+  .target-slide-element-2 {
+    animation: slideInFromLeft 1s ease-out forwards;
+    animation-delay: 1s;
+  }
+  
+  /* Apply the fade-in animation to the elements that should fade in on scroll */
+  .target-fade-element {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-fill-mode: both;
+  }
+
+  .target-fade-element-1 {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-fill-mode: both;
+    animation-delay:1s;
+  }
+
+  .logo {
+    height: auto;    
+    max-width: 10%;
+}
