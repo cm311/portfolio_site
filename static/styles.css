@@ -6,12 +6,12 @@
 body {
   color: aliceblue;
   font-family: PlayfairDisplay;
-  background-color: rgb(50, 50, 150);
+  background-color: rgb(10, 10, 120);
 }
 
 a {
   transition: .4s;
-  color:rgb(230, 230, 0)
+  color:rgb(200, 90, 60)
 }
 
 a:hover {
@@ -28,7 +28,7 @@ a:hover {
 }
 
 .list-group-item {
-  background-color: rgb(50, 50, 150);
+  background-color: rgb(10, 10, 120);
 }
 
 
