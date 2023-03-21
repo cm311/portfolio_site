@@ -31,6 +31,37 @@ a:hover {
   background-color: rgb(10, 10, 120);
 }
 
+.img-container {
+  width: 100%;
+  transition: all 0.2s ease;
+  animation: zIndexFix 0.2s forwards;
+  border-radius: 5px;
+}
+
+.img-container:hover {
+  transform: scale(1.8);
+  z-index:10;
+  animation: zIndexFixHover 0.2s forwards;
+}
+
+@keyframes zIndexFix {
+  0% {
+    z-index: 10;
+  }
+  100% {
+    z-index: 1;
+  }
+}
+
+@keyframes zIndexFixHover {
+  0% {
+    z-index: 1;
+  }
+  100% {
+    z-index: 10;
+  }
+}
+
 
 /* Define a slide-in animation */
 @keyframes slideInFromLeft {
