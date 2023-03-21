@@ -1,3 +1,4 @@
+
 from django.shortcuts import render
 from django.http import FileResponse
 from portfolio_site.settings import STATICFILES_DIRS as staticdirs
@@ -8,6 +9,6 @@ def home(request):
 
 def resume(request):
 
-    file_location = staticdirs[0] + '\\Resume.pdf'
+    file_location = staticdirs[0] + '/Resume.pdf'
     response = FileResponse(open(file_location, 'rb'))
     return response
