@@ -18,17 +18,26 @@
         <div id="content" class="container">
 
             <div id="title-and-resume" class="container row text-center mt-5 target-slide-element-1">
-                <div id="my-title" class="col">
-                    <h4>Colin Moriarity - Software Developer</h4> 
+                <div id="my-title" class="col-8">
+                    <h4><p id="my-title-txt">Colin Moriarity - Software Developer</p></h4> 
                 </div>
+       
+                
+ 
                 <div id="resume-download" class="col">
-                    <a href="/resume/" target="_blank">Resume (pdf)</a>
+                    <a id="resume-download-link" href="/resume/" target="_blank">Resume (pdf)</a>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn-sm btn-language" id="en">En</button>
+                    <button type="button" class="btn-sm btn-language" id="fr">Fr</button>
+                    <button type="button" class="btn-sm btn-language" id="es">Es</button>
+                    <!-- <button type="button" class="btn-sm btn-language" id="ar">عربية</button> -->
                 </div>
             </div>
 
             <div id="description" class="row mt-5 target-slide-element-1">
                 <div class="col-10">
-                    <p>I'm a software developer interested in using the Django framework to make complex projects accesible
+                    <p id="personal-description">I'm a software developer interested in using the Django framework to make complex projects accesible
                         on the web.
                         
                         I like learning languages.  I am interested in how human language and technology interact.
@@ -50,7 +59,7 @@
                                         <a href="https://babel-grahf.com" target="_blank" class="img-container"><img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 100%; width: 100%;display: block;"
                                         src="{% static 'blog_image.png' %}" data-holder-rendered="true"></a>
                                         <div class="card-body">
-                                            <p class="card-text">A personal blog site created using Django and bootstrap.</p>
+                                            <p class="card-text" id="my-blog">A personal blog site created using Django and bootstrap.</p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
                                                     <a href="https://github.com/cm311/site_" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary mr-3">&lt;/&gt;Code</button></a>
@@ -66,7 +75,7 @@
                                         <a href="https://babel-grahf.com/little-lemon" target="_blank" class="img-container"><img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 100%; width: 100%;display: block;"
                                         src="{% static 'lemon.png' %}" data-holder-rendered="true"></a>
                                         <div class="card-body">
-                                            <p class="card-text">A website for a fictional restaurant made using Django, Bootstrap, Javascript etc.</p>
+                                            <p class="card-text" id="little-lemon">A website for a fictional restaurant made using Django, Bootstrap, Javascript etc.</p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
                                                     <a href="https://github.com/cm311/little_lemon" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary mr-3">  &lt;/&gt; Code</button></a>
@@ -82,7 +91,7 @@
                                         <a href="https://www.kaggle.com/code/colinmoriarity/analysis-of-first-round-of-presidential-elections" target="_blank" class="img-container"><img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 100%; width: 100%;display: block;"
                                         src="{% static 'french_elections.png' %}" data-holder-rendered="true"></a>
                                         <div class="card-body">
-                                            <p class="card-text">Data Analysis Project examining the First round of 2021 French Elections</p>
+                                            <p class="card-text" id="french-elections">Data Analysis Project examining the First round of 2021 French Elections</p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
                                                     <a href="https://www.kaggle.com/code/colinmoriarity/analysis-of-first-round-of-presidential-elections" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary ml-3">To Jupyter Notebook</button></a>
@@ -97,7 +106,7 @@
                                         <a href="https://www.kaggle.com/code/colinmoriarity/nfl-football-poll-digit-pair-probabilities/" target="_blank" class="img-container"><img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 100%; width: 100%;display: block;"
                                         src="{% static 'nfl_polls.png' %}" data-holder-rendered="true"></a>
                                         <div class="card-body">
-                                            <p class="card-text">Data Analysis project on NFL football polls</p>
+                                            <p class="card-text" id="nfl-polls">Data Analysis project on NFL football polls</p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
                                                     <a href="https://www.kaggle.com/code/colinmoriarity/nfl-football-poll-digit-pair-probabilities/" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary ml-3">To Jupyter Notebook</button></a>
@@ -112,7 +121,7 @@
                                         <a href="https://github.com/cm311/nlp_proj" target="_blank" class="img-container"><img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 100%; width: 100%;display: block;"
                                         src="{% static 'nlp_proj.png' %}" data-holder-rendered="true"></a>
                                         <div class="card-body">
-                                            <p class="card-text">NLP tools for creating a Google News based corpus in multiple languages.  Some tools for creating word vectors and analyzing the differences.</p>
+                                            <p class="card-text" id="nlp-tools">NLP tools for creating a Google News based corpus in multiple languages.  Some tools for creating word vectors and analyzing the differences.</p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
                                                     <a href="https://github.com/cm311/nlp_proj" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary ml-3">  &lt;/&gt; Code</button></a>
@@ -127,7 +136,7 @@
                                         <a href="https://youtu.be/5O0dlqbpy9k" target="_blank" class="img-container"><img class="card-img-top"  alt="Thumbnail [100%x225]" style="height: 100%; width: 100%;display: block;"
                                         src="{% static 'oto.png' %}" data-holder-rendered="true"></a>
                                         <div class="card-body">
-                                            <p class="card-text">C++ music player/DJing application</p>
+                                            <p class="card-text" id="dj-app">C++ music player/DJing application</p>
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="btn-group">
                                                     <a href="https://github.com/cm311/oop_dj_app" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary mr-3">  &lt;/&gt; Code</button></a>
@@ -154,7 +163,7 @@
 
 
                 <div id="skills-and-education" class="col-3" style="margin-top:6%;">
-                    <h4 class="text-center" style="text-decoration: underline;">Technical Skills</h4>
+                    <h4 class="text-center" style="text-decoration: underline;"><p id="skills">Technical Skills</p></h4>
                     <ul class="list-group-flush">
                         <li class="list-group-item">HTML5 + CSS</li>
                         <li class="list-group-item">Git/Github</li>
@@ -165,12 +174,12 @@
                         <li class="list-group-item">Linux (Ubuntu mainly)</li>
                         <li class="list-group-item">Apache</li>
                     </ul>
-                    <h4 class="text-center" style="text-decoration: underline;">Language Skills</h4>
+                    <h4 class="text-center" style="text-decoration: underline;"><p id="languages">Language Skills</p></h4>
                     <ul class="list-group-flush">
-                        <li class="list-group-item">English</li>
-                        <li class="list-group-item">French</li>
-                        <li class="list-group-item">Spanish</li>
-                        <li class="list-group-item">Arabic</li>
+                        <li class="list-group-item" id="en-list-item">English</li>
+                        <li class="list-group-item" id="fr-list-item">French</li>
+                        <li class="list-group-item" id="es-list-item">Spanish</li>
+                        <li class="list-group-item" id="ar-list-item">Arabic</li>
                     </ul>
                 </div>
 
@@ -201,6 +210,8 @@
                  <a href="https://www.digitalocean.com/" target="_blank"><img src="{% static 'digitaloceanlogo.png' %}" class="logo rounded" alt="..."></a>
             </p>
         </div>
+
+        <script src="{% static 'scripts/animation_scripts.js' %}"></script>
           
     </body>
 </html>

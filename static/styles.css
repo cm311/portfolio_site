@@ -114,3 +114,45 @@ a:hover {
     height: auto;    
     max-width: 10%;
 }
+
+/* Crumble animation for when the text is translated from En/Fr and vice versa  */
+.crumble {
+  animation: crumble .4s forwards;
+}
+
+.reversecrumble {
+  animation: reversecrumble .4s forwards;
+}
+
+@keyframes crumble {
+  from {
+    transform: scale(1);
+    opacity:1;
+  }
+  to {
+    transform: scale(0.5) rotate(-30deg) translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes reversecrumble {
+    /* For when the translated text comes in */
+    from {
+      transform: scale(0.5) rotate(30deg) translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+.btn-language { 
+  color:aliceblue;
+  margin-bottom: 20%;
+  background-color: rgb(10, 10, 120);
+}
+
+.btn-language:hover {
+  background-color: rgb(25, 25, 150);
+}
